@@ -12,5 +12,9 @@ To mac changer;
 ```
 pkg install sudo
 ```
+## For Installation;
+```
+git clone https://github.com/zimmer07/VPN.git
+```
 # I Will Upgrade This Tool In The Future
 Thank You For Using My Tool🤗👋
