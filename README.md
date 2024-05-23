@@ -16,5 +16,11 @@ pkg install sudo
 ```
 git clone https://github.com/zimmer07/VPN.git
 ```
+## To Run;
+```
+cd VPN
+python vpn.py
+```
+And Just Select Any Election.
 # I Will Upgrade This Tool In The Future
 Thank You For Using My Tool🤗👋
