@@ -27,8 +27,13 @@ def get_user_choice():
 
 def start_vpn():
     print("\033[33mYou have selected Normal VPN. Starting VPN...\033[0m")  # 33 is the ANSI code for yellow
-    # Place your VPN start-up command here
-    # For example: os.system('sudo openvpn --config /path/to/your/config.ovpn')
+    # VPN yapılandırma dosyanızın yolunu burada belirtin
+    vpn_config_path = "/storage/emulated/0/Download/us-free-421049.protonvpn.udp.ovpn"
+    try:
+        subprocess.call(f"sudo openvpn --config {vpn_config_path}", shell=True)
+        print("\033[33mVPN connection established!\033[0m")
+    except Exception as e:
+        print(f"\033[31mAn error occurred while starting the VPN: {e}\033[0m")
 
 def install_tor():
     print("\033[33mInstalling Tor...\033[0m")  # 33 is the ANSI code for yellow
